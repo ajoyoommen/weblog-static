@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Ajoy Oommen's Web Log"
-description: "on topics relating to Computer Science and Programming"
 is_home_page: true
 ---
 {% for post in site.posts %}
