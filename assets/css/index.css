@@ -1,0 +1,55 @@
+.font-comfortaa {
+    font-family: 'Comfortaa', cursive;
+}
+
+.font-baskerville {
+    font-family: Baskerville, Baskerville Old Face, Times New Roman,serif;
+}
+
+.font-avant-garde {
+    font-family: Avant Garde, Avantgarde, AppleGothic, sans-serif;
+}
+
+.font-monaco {
+    font-family: Monaco, 'Courier New', monospace;
+}
+
+.font-neuton {
+    font-family: 'Neuton', sans-serif;
+}
+
+.font-size-70pc {
+    font-size: 70%;
+}
+
+.text-gray {
+    color: #666;
+}
+
+.text-post {
+    font-size: 140%;
+    font-weight: 500;
+}
+
+/*
+   Classes for simple side navigation in category and archive tree
+*/
+
+.nav-item {
+    padding: 5px;
+}
+
+.item-head {
+    list-style: none;
+    border-left: 1px solid #ddd;
+}
+
+.item-link {
+    display: block;
+    padding-left: 15px;
+    border-left: 1px solid #fff;
+}
+
+.item-link:hover, .item-link:active, .item-link:focus {
+    border-left: 1px solid #777;
+}

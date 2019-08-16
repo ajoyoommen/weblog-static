@@ -1,0 +1,27 @@
+---
+layout: default
+title: WEBLOG
+---
+<h2 class="font-comfortaa">
+  {{ page.title }}
+</h2>
+
+<h5 class="text-gray">
+  <span>
+    <a href="">
+      {{ page.date | date_to_string }}
+    </a> |
+
+    Posted in
+    <a href="">
+      {{ page.categories }}
+    </a> |
+     {{ page.author }}
+  </span>
+</h5>
+
+<div class="text-justify text-post font-neuton">
+  {{ page.content }}
+</div>
+
+<h2>Related Posts</h2>
