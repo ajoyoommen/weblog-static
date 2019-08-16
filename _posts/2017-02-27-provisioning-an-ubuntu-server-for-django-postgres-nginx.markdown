@@ -2,7 +2,7 @@
 layout: post
 title:  "Provisioning an ubuntu server for Django, Postgres, NGINX"
 date:   2017-02-27 00:29:05 +0530
-categories: nginx
+category: nginx
 tags:
     - aws
     - ec2
