@@ -2,18 +2,16 @@
 layout: default
 title: WEBLOG
 ---
-<h2 class="font-comfortaa">
-  {{ page.title }}
-</h2>
+<h2 class="font-comfortaa">{{ page.title }}</h2>
 
 <h5 class="text-gray">
   <span>
-    <a href="">
+    <a href="/archive/">
       {{ page.date | date: "%B %d, %Y" }}
     </a> |
 
     Posted in
-    <a href="/categories">
+    <a href="/categories/">
       {{ page.categories }}
     </a> |
      {{ page.author }}
