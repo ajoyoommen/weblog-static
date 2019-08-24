@@ -1,16 +1,11 @@
 ---
 layout: post
-title:  "Provisioning an ubuntu server for Django, Postgres, NGINX"
-date:   2017-02-27 00:29:05 +0530
-category: nginx
-tags:
-    - aws
-    - ec2
-    - django
-    - nginx
-    - postgresql
-    - ubuntu
-author: "Ajoy Oommen"
+title: Provisioning an ubuntu server for Django, Postgres, NGINX
+date: 2017-02-27 06:29:05 +0530
+category: NGINX
+tags: PostgreSQL ubuntu AWS EC2 NGINX Django
+author: Ajoy Oommen
+published: true
 ---
 1. Install `virtualenv`
 
