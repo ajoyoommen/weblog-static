@@ -1,0 +1,24 @@
+---
+layout: default
+title: "Categories | Web Log"
+permalink: /categories/
+---
+<h2>Categories</h2>
+
+{% for category in site.categories %}
+  {% capture category_name %}{{ category | first }}{% endcapture %}
+  <h3>
+    <li class="nav-item text-gray">
+      {{ category_name }}
+    </li>
+  </h3>
+
+  {% for post in site.categories[category_name] %}
+    <h4>
+      <span class="font-monaco font-size-70pc">
+        {{ post.date | date_to_string }} &raquo; </span>
+      <a href="{{ post.url  }}">
+        {{ post.title }}</a>
+    </h4>
+  {% endfor %}
+{% endfor %}

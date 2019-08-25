@@ -1,0 +1,14 @@
+title: "Ajoy Oommen's Weblog"
+email: ajoyoommen
+description: ""
+baseurl: ""
+url: "https://blog.ajoyoommen.com"
+twitter_username: ajoyoommen
+github_username:  ajoyoommen
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+permalink: /:year/:month/:day/:title
