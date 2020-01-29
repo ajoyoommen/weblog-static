@@ -3,7 +3,9 @@ layout: post
 title: Distributed Key Generation in BFIBC
 date: 2013-02-20 18:17:31 +0530
 category: Asynchronous Key Generation for IBE
-tags: IBC Identity-based Cryptography Franklin Key Boneh Generation Distributed
+tags:
+    - IBC
+    - DKG
 author: Ajoy Oommen
 published: true
 ---

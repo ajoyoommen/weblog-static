@@ -3,7 +3,10 @@ layout: post
 title: Installing Cordova and android platform tools
 date: 2016-02-23 15:56:56 +0530
 category: Cordova
-tags: Node Cordova Android
+tags:
+    - NodeJS
+    - Cordova
+    - Android
 author: Ajoy Oommen
 published: false
 ---

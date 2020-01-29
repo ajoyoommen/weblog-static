@@ -3,7 +3,8 @@ layout: post
 title: Useful EMACS shortcuts
 date: 2015-02-21 04:20:01 +0530
 category: Editors
-tags: Shortcuts EMACS
+tags:
+    - EMACS
 author: Ajoy Oommen
 published: true
 ---

@@ -3,7 +3,12 @@ layout: post
 title: A simple javascript game
 date: 2013-07-26 05:58:45 +0530
 category: Collision
-tags: Javascript Linux Physics Game Kollision Collision HTML5
+tags:
+    - JavaScript
+    - Linux
+    - Physics
+    - Game
+    - HTML5
 author: Ajoy Oommen
 published: true
 ---

@@ -3,7 +3,9 @@ layout: post
 title: Pseudo code for the mathematical functions
 date: 2013-02-20 18:20:44 +0530
 category: Asynchronous Key Generation for IBE
-tags: Pairing-based Mathematics Cryptography Key Functions Generation Distributed
+tags:
+    - PBC
+    - DKG
 author: Ajoy Oommen
 published: true
 ---
@@ -13,7 +15,7 @@ published: true
             element_pow_zn(f, key, l)
             element_mul_zn(prkey, prkey, f)
         return prkey
-        
+
     function lambda(node as integer)
         j = 1
         l = 1

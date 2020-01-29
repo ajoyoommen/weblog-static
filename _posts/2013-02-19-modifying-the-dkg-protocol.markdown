@@ -3,7 +3,10 @@ layout: post
 title: Modifying the DKG protocol
 date: 2013-02-19 18:03:34 +0530
 category: Asynchronous Key Generation for IBE
-tags: Verifiable Sharing IBC Identity-based Cryptography Franklin Secret Key Boneh Generation Distributed
+tags:
+    - VSS
+    - IBC
+    - DKG
 author: Ajoy Oommen
 published: true
 ---

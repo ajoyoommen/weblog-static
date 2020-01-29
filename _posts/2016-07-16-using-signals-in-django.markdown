@@ -3,7 +3,9 @@ layout: post
 title: Using Signals in Django
 date: 2016-07-16 04:44:41 +0530
 category: Django
-tags: Signals Django
+tags:
+    - Signals
+    - Django
 author: Ajoy Oommen
 published: true
 ---
@@ -32,15 +34,15 @@ Define your receivers (that connect to and handle your signals) in `signals.py` 
 Add a [ready](https://docs.djangoproject.com/en/1.9/ref/applications/#django.apps.AppConfig.ready) method to your `apps.py` in the app module
 
     # myapp/apps.py
-    from __future__ import unicode_literals 
-                                            
-    from django.apps import AppConfig       
-                                            
-                                            
-    class MyAppConfig(AppConfig):       
-        name = 'myapp'                  
-                                            
-        def ready(self):                    
+    from __future__ import unicode_literals
+
+    from django.apps import AppConfig
+
+
+    class MyAppConfig(AppConfig):
+        name = 'myapp'
+
+        def ready(self):
             import signals  # noqa
 
 Ensure default_app_config is set in `__init__.py`

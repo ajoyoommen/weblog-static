@@ -3,7 +3,10 @@ layout: post
 title: Customizing Django
 date: 2015-12-14 07:02:02 +0530
 category: Django
-tags: Admin Django Templates
+tags:
+    - Django
+    - Django Admin
+    - Django Templates
 author: Ajoy Oommen
 published: false
 ---
@@ -18,4 +21,3 @@ This article will give a brief description of all the parts of Django and how ea
             Add a template `change_form.html` in `templates/admin/questions/`
 
 Sources:-
-

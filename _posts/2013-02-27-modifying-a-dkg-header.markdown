@@ -3,7 +3,9 @@ layout: post
 title: Modifying a DKG header
 date: 2013-02-27 18:36:26 +0530
 category: Asynchronous Key Generation for IBE
-tags: C++ IBC Franklin Key Boneh Generation Distributed
+tags:
+    - C++
+    - DKG
 author: Ajoy Oommen
 published: true
 ---
@@ -19,17 +21,17 @@ I might change this later on, probably.
       RECONSTRUCT_SHARE, PUBLIC_KEY_EXCHANGE, BLS_SIGNATURE_REQUEST,
       BLS_SIGNATURE_RESPONSE, WRONG_BLS_SIGNATURES, VERIFIED_BLS_SIGNATURES
         } NetworkMessageType;
-     
+
     class IBCRequestMessage : public NetworkMessage
     {
     public:
       IBCRequestMessage(NodeID node, string &amp;ID);
       IBCRequestMessage(const Buddy *buddy, const string &amp;str, int g_recv_ID);
-      NodeID node; 
+      NodeID node;
       string ID;
       FILE *file;
     };
-     
+
     class IBCReplyMessage : public NetworkMessage
     {
     public:

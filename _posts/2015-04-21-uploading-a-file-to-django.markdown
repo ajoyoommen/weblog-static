@@ -3,7 +3,9 @@ layout: post
 title: Uploading a file to Django
 date: 2015-04-21 10:53:34 +0530
 category: Django
-tags: Python Django
+tags:
+    - Python
+    - Django
 author: Ajoy Oommen
 published: true
 ---

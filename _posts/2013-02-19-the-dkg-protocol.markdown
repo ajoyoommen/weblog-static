@@ -3,7 +3,8 @@ layout: post
 title: The DKG Protocol
 date: 2013-02-19 17:47:50 +0530
 category: Asynchronous Key Generation for IBE
-tags: Protocol Generation Distributed Key
+tags:
+    - DKG
 author: Ajoy Oommen
 published: true
 ---

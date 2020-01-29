@@ -3,7 +3,9 @@ layout: post
 title: Beginning with 0AD
 date: 2013-07-09 18:58:09 +0530
 category: 0AD
-tags: Open Real-time source Strategy 0AD
+tags:
+    - Open source
+    - 0AD
 author: Ajoy Oommen
 published: true
 ---

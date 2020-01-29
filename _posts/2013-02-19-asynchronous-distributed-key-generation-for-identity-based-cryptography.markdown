@@ -3,7 +3,10 @@ layout: post
 title: Asynchronous Distributed Key Generation for Identity-Based Cryptography
 date: 2013-02-19 17:40:34 +0530
 category: Asynchronous Key Generation for IBE
-tags: Certificate IBC Identity-based Cryptography Franklin Authority Key Asynchronous Boneh Generation Distributed
+tags:
+    - IBC
+    - Cryptography
+    - DKG
 author: Ajoy Oommen
 published: true
 ---

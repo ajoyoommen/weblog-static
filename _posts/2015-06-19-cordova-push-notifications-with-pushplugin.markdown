@@ -3,7 +3,9 @@ layout: post
 title: Cordova Push Notifications with PushPlugin
 date: 2015-06-19 18:03:44 +0530
 category: Cordova
-tags: 
+tags:
+    - Cordova
+    - Android
 author: Ajoy Oommen
 published: true
 ---

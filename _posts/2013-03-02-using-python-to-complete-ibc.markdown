@@ -3,7 +3,12 @@ layout: post
 title: Using python to complete IBC
 date: 2013-03-02 18:39:15 +0530
 category: Asynchronous Key Generation for IBE
-tags: Pairing-based C C++ Python Cryptography Key Ctypes Generation Distributed
+tags:
+    - PBC
+    - C
+    - C++
+    - Python
+    - Ctypes
 author: Ajoy Oommen
 published: true
 ---

@@ -3,7 +3,10 @@ layout: post
 title: Configuring SSH servers on Ubuntu
 date: 2016-03-25 05:16:47 +0530
 category: SSH
-tags: SSH Linux ubuntu
+tags:
+    - SSH
+    - Linux
+    - Ubuntu
 author: Ajoy Oommen
 published: true
 ---

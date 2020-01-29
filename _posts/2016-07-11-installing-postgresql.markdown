@@ -3,7 +3,10 @@ layout: post
 title: Installing PostgreSQL
 date: 2016-07-11 09:49:36 +0530
 category: PostgreSQL
-tags: PostgreSQL
+tags:
+    - PostgreSQL
+    - Ubuntu
+    - Linux
 author: Ajoy Oommen
 published: true
 ---

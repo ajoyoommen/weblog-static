@@ -3,7 +3,12 @@ layout: post
 title: Getting the code for 0AD from SVN
 date: 2013-07-09 19:02:12 +0530
 category: 0AD
-tags: Git GitHub clone Clone Subversion 0AD
+tags:
+    - Git
+    - GitHub
+    - clone
+    - Subversion
+    - 0AD
 author: Ajoy Oommen
 published: true
 ---

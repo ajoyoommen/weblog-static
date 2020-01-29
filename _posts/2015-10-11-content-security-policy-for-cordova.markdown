@@ -3,7 +3,11 @@ layout: post
 title: Content Security Policy for Cordova
 date: 2015-10-11 15:11:39 +0530
 category: Cordova
-tags: Policy Security tag Meta EmberJS HTML Cordova Content
+tags:
+    - EmberJS
+    - HTML
+    - Cordova
+    - CSP
 author: Ajoy Oommen
 published: true
 ---

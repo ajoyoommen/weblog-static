@@ -3,7 +3,10 @@ layout: post
 title: About DDos attacks
 date: 2016-02-17 15:35:47 +0530
 category: Security
-tags: DDos DoS
+tags:
+    - DDos
+    - DoS
+    - Firewall
 author: Ajoy Oommen
 published: true
 ---

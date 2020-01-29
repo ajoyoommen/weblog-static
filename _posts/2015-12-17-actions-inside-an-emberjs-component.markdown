@@ -3,7 +3,9 @@ layout: post
 title: Actions inside an EmberJS component
 date: 2015-12-17 14:14:23 +0530
 category: EmberJS
-tags: EmberJS Javascript Actions Components
+tags:
+    - EmberJS
+    - JavaScript
 author: Ajoy Oommen
 published: true
 ---

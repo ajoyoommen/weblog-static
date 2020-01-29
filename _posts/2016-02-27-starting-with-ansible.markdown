@@ -3,7 +3,8 @@ layout: post
 title: Starting with ansible
 date: 2016-02-27 05:57:27 +0530
 category: Ansible
-tags: ansible
+tags:
+    - ansible
 author: Ajoy Oommen
 published: false
 ---
