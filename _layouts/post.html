@@ -2,9 +2,9 @@
 layout: default
 title: WEBLOG
 ---
-<h2 class="font-comfortaa">{{ page.title }}</h2>
+<h1>{{ page.title }}</h1>
 
-<h5 class="text-gray">
+<h5 class="text-gray font-avant-garde">
   <span>
     <a href="/archive/">
       {{ page.date | date: "%B %d, %Y" }}
@@ -14,73 +14,76 @@ title: WEBLOG
     <a href="/categories/">
       {{ page.categories }}
     </a> |
-     {{ page.author }}
+    {{ page.author }}
   </span>
 </h5>
+
+<hr>
 
 <div class="text-justify text-post font-neuton">
   {{ page.content }}
 </div>
 
-<hr>
-
 {% if page.tags %}
-  {% for tag in page.tags %}
-    <span class="badge badge-light">{{ tag }}</span>
-  {% endfor %}
+  <div class="well">
+    {% for tag in page.tags %}
+      <span class="badge badge-light">{{ tag }}</span>
+    {% endfor %}
+  </div>
 {% endif %}
 
-<h2>Related Posts</h2>
+{% if page.comments %}
+  <div id="disqus_thread"></div>
+  <script>
 
+    var disqus_config = function () {
+      this.page.url = "https://blog.ajoyoommen.com{{ page.url }}";
+      this.page.identifier = "{{ page.id }}";
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://weblog-ajoy.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
+
+<hr>
+
+<h2 class="font-avant-garde">Related Posts</h2>
 
 {% assign maxRelated = 10 %}
 {% assign minCommonTags =  1 %}
 {% assign maxRelatedCounter = 0 %}
 
-  {% for post in site.posts %}
+{% for post in site.posts %}
 
-    {% assign sameTagCount = 0 %}
-    {% assign commonTags = '' %}
+  {% assign sameTagCount = 0 %}
+  {% assign commonTags = '' %}
 
-    {% for tag in post.tags %}
-      {% if post.url != page.url %}
-        {% if page.tags contains tag %}
-          {% assign sameTagCount = sameTagCount | plus: 1 %}
-          {% assign commonTags = commonTags | append: tagmarkup %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-
-    {% if sameTagCount >= minCommonTags %}
-      <h4>
-        <span class="font-monaco font-size-70pc">
-          {{ post.date | date_to_string }} &raquo; </span>
-        <a href="{{ post.url  }}">
-          {{ post.title }}</a>
-      </h4>
-      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-      {% if maxRelatedCounter >= maxRelated %}
-        {% break %}
+  {% for tag in post.tags %}
+    {% if post.url != page.url %}
+      {% if page.tags contains tag %}
+        {% assign sameTagCount = sameTagCount | plus: 1 %}
+        {% assign commonTags = commonTags | append: tagmarkup %}
       {% endif %}
     {% endif %}
-
   {% endfor %}
 
-  {% if page.comments %}
-    <div id="disqus_thread"></div>
-    <script>
-
-      var disqus_config = function () {
-        this.page.url = "https://blog.ajoyoommen.com{{ page.url }}";
-        this.page.identifier = "{{ page.id }}";
-      };
-
-      (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = 'https://weblog-ajoy.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  {% if sameTagCount >= minCommonTags %}
+    <h4>
+      <span class="font-monaco font-size-70pc">
+        {{ post.date | date_to_string }} &raquo; </span>
+      <a href="{{ post.url  }}">
+        {{ post.title }}</a>
+    </h4>
+    {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+    {% if maxRelatedCounter >= maxRelated %}
+      {% break %}
+    {% endif %}
   {% endif %}
+
+{% endfor %}
