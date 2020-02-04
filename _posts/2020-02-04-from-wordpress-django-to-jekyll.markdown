@@ -15,7 +15,7 @@ author: "Ajoy Oommen"
 published: true
 comments: true
 ---
-In this post I want to discuss about the various platforms and tools I have used to host this blog over the years. Although I haven't blogged as frequently as I would have hoped to, I was more concerned with ensuring that the blog is live and running. I have experimented with both dynamic and static site generators and these are some experiences that I like to share here.
+In this post, I want to discuss about the various platforms and tools I have used to host this blog over the years. I haven't blogged as frequently as I would have liked to. In fact, I have been more concerned with developing and hosting this blog. I have experimented with both dynamic and static site generators and these are some experiences that I'd like to share here.
 
 ### Managed by WordPress
 
@@ -29,10 +29,10 @@ When I started working with Django in 2014, I wanted to build a blog using Djang
 I hosted the blog at [blog.ajoyoommen.com](https://blog.ajoyoommen.com/) in July 2016 using a EC2 t2.micro instance. I used Bootstrap to design the layout for the home page, posts and all the custom views. Overall, the performance and design seemed great to me, in spite of the costs of running an EC2 instance perpetually.
 
 ### Django on AWS Lambda
-Around July 2018, I used [Zappa](https://github.com/Miserlou/Zappa) to deploy the blog on AWS Lambda. I moved the database from the t2.micro instance to a t2.nano. This reduced costs by almost 35%.  I was quite decided by then, that I need to move to a static site generator, especially because you do not need to host a database.
+Around July 2018, I used [Zappa](https://github.com/Miserlou/Zappa) to deploy the blog on AWS Lambda. I moved the database from the t2.micro instance to a t2.nano. This reduced costs by almost 35%.  I was quite decided by then, that I need to move to a static site generator, especially because I would not need to host a database.
 
 ### Jekyll on AWS Amplify
-Last August, I started setting up my blog using Jekyll. The main challenge was converting the template structure in Django to Jekyll's layout structure. For migrating the database into files, I used an IPython shell to iterate over each post from the database and create the markdown file with the correct filename and parameters.
+Last August, I started setting up my blog ([weblog-static](https://github.com/ajoyoommen/weblog-static) on my GitHub) using Jekyll. The major rework was converting the template structure in Django to Jekyll's format. For migrating the database into files, I used an IPython shell to iterate over each post from the database and create the markdown file with the correct filename and parameters.
 
 In September, I published the blog using [AWS Amplify](https://aws.amazon.com/amplify/console/). According to its website, what AWS Amplify provides is
 
