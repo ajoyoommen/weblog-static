@@ -3,7 +3,9 @@ layout: post
 title: The DKG protocol, in short
 date: 2013-02-19 17:58:52 +0530
 category: Asynchronous Key Generation for IBE
-tags: Protocol Verifiable Sharing Secret Key Generation Distributed
+tags:
+    - VSS
+    - DKG
 author: Ajoy Oommen
 published: true
 ---

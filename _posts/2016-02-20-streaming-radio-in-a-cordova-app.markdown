@@ -3,7 +3,12 @@ layout: post
 title: Streaming radio in a Cordova app
 date: 2016-02-20 07:42:39 +0530
 category: Cordova
-tags: Javascript Android Audio EmberJS Streaming Cordova
+tags:
+    - Javascript
+    - Android
+    - Audio
+    - EmberJS
+    - Cordova
 author: Ajoy Oommen
 published: true
 ---

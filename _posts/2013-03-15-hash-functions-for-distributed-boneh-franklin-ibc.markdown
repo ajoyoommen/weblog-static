@@ -3,7 +3,10 @@ layout: post
 title: Hash functions for distributed Boneh Franklin IBC
 date: 2013-03-15 18:45:21 +0530
 category: Asynchronous Key Generation for IBE
-tags: Pairing-based C Mathematics Hash IBC Identity-based Cryptography Franklin Key Boneh function Generation Distributed
+tags:
+    - PBC
+    - C
+    - IBC
 author: Ajoy Oommen
 published: true
 ---
@@ -29,7 +32,7 @@ This is the C code of the hash functions using the PBC library :
       SHA1(b, sizeof(b), h);
       element_from_hash(h1, h, 20);
     }
-     
+
     void hash2(unsigned char *b){
       /* Mathematically,
        * H2 : GT -> {0,1}^l, l = 20
@@ -40,7 +43,7 @@ This is the C code of the hash functions using the PBC library :
       element_to_bytes(temp, h2gt);
       SHA1(temp, sizeof(temp), b);
     }
-     
+
     void hash3(unsigned char * b1, unsigned char * b2){
       /* Mathematically,
        * H3 : {0,1}^l X {0,1}^l -> Zp
@@ -54,7 +57,7 @@ This is the C code of the hash functions using the PBC library :
       }
       element_from_bytes(h3zr, rnd);
     }
-     
+
     void hash4(unsigned char * b, unsigned char * hb){
       /* Mathematically,
        * H4 : {0,1}^l -> {0,1}^l
@@ -63,7 +66,7 @@ This is the C code of the hash functions using the PBC library :
        */
       SHA1(b, sizeof(b), hb);
     }
-     
+
     void init_hashes(){
       element_init_G2(h1, pairing);
       element_init_GT(h2gt, pairing);

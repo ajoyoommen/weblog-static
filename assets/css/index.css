@@ -31,6 +31,17 @@
     font-weight: 500;
 }
 
+h1, .text-post, h2, .text-post h3, .text-post h4, .text-post h5, .text-post h6 {
+    //font-family: 'Comfortaa', cursive;
+    font-family: Baskerville, Baskerville Old Face, Times New Roman, serif;
+}
+
+.text-post h2, .text-post h3, .text-post h4, .text-post h5, .text-post h6 {
+    font-weight: 600;
+    font-size: 100%;
+}
+
+
 /*
    Classes for simple side navigation in category and archive tree
 */

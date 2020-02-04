@@ -3,7 +3,13 @@ layout: post
 title: Supervisor in Elastic Beanstalk
 date: 2015-05-01 14:50:06 +0530
 category: Supervisor
-tags: EC2 SSH EB AWS
+tags:
+    - AWS EC2
+    - SSH
+    - AWS EB
+    - AWS
+    - Supervisor
+    - celery
 author: Ajoy Oommen
 published: true
 ---

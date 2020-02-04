@@ -3,7 +3,12 @@ layout: post
 title: Debugging with adb logcat
 date: 2015-11-18 06:11:48 +0530
 category: Android
-tags: Logging Debugging Cordova Android
+tags:
+    - Logging
+    - Debugging
+    - Cordova
+    - Android
+    - adb
 author: Ajoy Oommen
 published: true
 ---

@@ -3,7 +3,9 @@ layout: post
 title: Stats from NGINX logs using Goaccess
 date: 2017-01-24 06:15:28 +0530
 category: NGINX
-tags: Logging NGINX Goaccess
+tags:
+    - NGINX
+    - Goaccess
 author: Ajoy Oommen
 published: true
 ---

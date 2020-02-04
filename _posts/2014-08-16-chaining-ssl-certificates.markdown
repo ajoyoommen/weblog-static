@@ -3,7 +3,10 @@ layout: post
 title: Chaining SSL Certificates
 date: 2014-08-16 16:52:36 +0530
 category: SSL
-tags: Comodo Untrusted Authority Chaining SSL Certificate Certificates
+tags:
+    - SSL
+    - CA
+    - certificate
 author: Ajoy Oommen
 published: true
 ---

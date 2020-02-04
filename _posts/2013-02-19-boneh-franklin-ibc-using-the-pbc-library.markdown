@@ -3,7 +3,10 @@ layout: post
 title: Boneh Franklin IBC using the PBC library
 date: 2013-02-19 17:37:31 +0530
 category: Asynchronous Key Generation for IBE
-tags: Pairing-based C Decryption IBC Identity-based Cryptography Franklin Boneh Encryption
+tags:
+    - PBC
+    - C
+    - IBC
 author: Ajoy Oommen
 published: true
 ---
@@ -12,7 +15,7 @@ I found this code in the PBC library developer's group : [bonehfranklin.c](https
     /***
         Boneh & Franklin encryption scheme as presented in the article "Id-based encryption from the Weil pairing"
     ***/
-    
+
     #include<stdio.h>
     #include<stdlib.h>
     #include<time.h>
@@ -25,33 +28,33 @@ I found this code in the PBC library developer's group : [bonehfranklin.c](https
     #include<openssl/ssl.h>
     #include<pbc/pbc.h>
     #include<pbc/pbc_test.h>
-    
-    
+
+
     int main(int argc, char **argv)
     {
       pairing_t pairing;
       element_t P, Ppub, Did, Qid, U, s, r, xt, gid;
       int fd=0,i=0;
       char m[80]={0}, mv[80]={0}, c[80]={0}, id[20]="157.157.157.157", hash[20]={0}, err[80]={0}, *gs=NULL;
-    
-    
+
+
       /***
           errors strings initialization for SHA1 & clock initialization for times computation
       ***/
       ERR_load_crypto_strings();
       SSL_load_error_strings();
-    
+
       /***initialize the message which is going to be signed***/
       fd = open("/dev/urandom",O_RDONLY);
       read(fd, m, 80);
       close(fd);
-    
+
       /***
           pairing function initalization from the input file which contains the pairing parameters
       ***/
       pbc_demo_pairing_init(pairing, argc, argv);
       if (!pairing_is_symmetric(pairing)) pbc_die("pairing must be symmetric");
-    
+
       /***
           initialization of G1 elements
       ***/
@@ -60,13 +63,13 @@ I found this code in the PBC library developer's group : [bonehfranklin.c](https
       element_init_G1(Qid, pairing);
       element_init_G1(Did, pairing);
       element_init_G1(U, pairing);
-    
+
       /***
           initialization of Zr elements
       ***/
       element_init_Zr(s, pairing);
       element_init_Zr(r, pairing);
-    
+
       /***
           initialization of GT elements
       ***/
@@ -81,8 +84,8 @@ I found this code in the PBC library developer's group : [bonehfranklin.c](https
       element_printf("++s: %B\n",s);
       element_printf("++P:  %B\n", P);
       element_printf("++Ppub: %B\n", Ppub);
-    
-    
+
+
       /***
           key generation
       ***/
@@ -95,7 +98,7 @@ I found this code in the PBC library developer's group : [bonehfranklin.c](https
       element_mul_zn(Did, Qid, s);
       element_printf("++Qid: %B\n", Qid);
       element_printf("++Did: %B\n", Did);
-    
+
       /***
           encryption
       ***/
@@ -118,11 +121,11 @@ I found this code in the PBC library developer's group : [bonehfranklin.c](https
           c[i+60]=m[i+60]^hash[i];
         }
       free(gs);
-    
+
       element_printf("++r: %B\n",r);
       element_printf("++U: %B\n",U);
       element_printf("++gid: %B\n",gid);
-    
+
       /***
           decryption
       ***/
@@ -141,15 +144,15 @@ I found this code in the PBC library developer's group : [bonehfranklin.c](https
           mv[i+40]=c[i+40]^hash[i];
           mv[i+60]=c[i+60]^hash[i];
         }
-    
+
       element_printf("e(Did,U):%B\n",xt);
       for(i=0;i<80;i++)
         {
           printf(":%d %d %d\n",i,m[i],mv[i]);
         }
-    
+
       printf("\n%d\n",strncmp(m,mv,80));
-    
+
       /***free mem***/
       element_clear(P);
       element_clear(Ppub);
@@ -163,6 +166,6 @@ I found this code in the PBC library developer's group : [bonehfranklin.c](https
       pairing_clear(pairing);
       free(gs);
       ERR_free_strings();
-    
+
       return 0;
     }

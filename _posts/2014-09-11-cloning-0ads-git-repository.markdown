@@ -3,7 +3,11 @@ layout: post
 title: Cloning 0AD’s Git repository
 date: 2014-09-11 17:10:39 +0530
 category: 0AD
-tags: Git unshallow clone Wget shallow 0AD fetch
+tags:
+    - Git
+    - clone
+    - wget
+    - 0AD
 author: Ajoy Oommen
 published: true
 ---

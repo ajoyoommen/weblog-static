@@ -3,7 +3,9 @@ layout: post
 title: Postgres backup and recovery
 date: 2015-04-20 15:43:41 +0530
 category: PostgreSQL
-tags: Database PostgreSQL
+tags:
+    - backup
+    - PostgreSQL
 author: Ajoy Oommen
 published: true
 ---

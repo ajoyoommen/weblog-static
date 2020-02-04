@@ -3,7 +3,9 @@ layout: post
 title: Using Tata Photon Plus in Linux
 date: 2013-12-13 16:42:29 +0530
 category: Linux
-tags: Linux Photon USB Modeswitch Plus
+tags:
+    - Linux
+    - USB Modeswitch
 author: Ajoy Oommen
 published: true
 ---

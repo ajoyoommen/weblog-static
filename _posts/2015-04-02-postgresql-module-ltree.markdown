@@ -3,7 +3,9 @@ layout: post
 title: PostgreSQL module ltree
 date: 2015-04-02 06:02:14 +0530
 category: PostgreSQL
-tags: Ltree PostgreSQL
+tags:
+    - Ltree
+    - PostgreSQL
 author: Ajoy Oommen
 published: true
 ---

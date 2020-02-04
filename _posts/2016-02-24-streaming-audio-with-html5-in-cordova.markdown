@@ -3,7 +3,11 @@ layout: post
 title: Streaming audio with HTML5 in Cordova
 date: 2016-02-24 04:50:16 +0530
 category: Cordova
-tags: Android Audio Streaming Cordova HTML5
+tags:
+    - Android
+    - Audio
+    - Cordova
+    - HTML5
 author: Ajoy Oommen
 published: false
 ---

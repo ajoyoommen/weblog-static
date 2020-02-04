@@ -3,7 +3,10 @@ layout: post
 title: Overlapping collisions
 date: 2013-07-29 16:23:34 +0530
 category: Collision
-tags: Mathematics Physics Vectors Game Collision
+tags:
+    - Physics
+    - Vectors
+    - Game
 author: Ajoy Oommen
 published: true
 ---
@@ -49,16 +52,16 @@ The first solution I tried was to find the midpoint of the collisions, and displ
          * where, r is the distance from point h, k to the required point (x, y)
          *
          */
-    
+
         var A = 2*x2 - 2*x1;
         var B = 2*y2 - 2*y1;
         var C = square(x1) + square(y1) - square(x2) - square(y2);
-    
+
         var h = (x1 + x2) / 2;
         var k = (y1 + y2) / 2;
-    
+
         var r = sprites[0].w;
-    
+
         var sqrtAB = Math.sqrt(square(A) + square(B)); // (A^2 + B^2)^1/2
         var a = A / sqrtAB;
         var b = B / sqrtAB;
@@ -68,7 +71,7 @@ The first solution I tried was to find the midpoint of the collisions, and displ
         var x_b = h - a*d - b*sqrtRD;
         var y_a = k - b*d + a*sqrtRD;
         var y_b = k - b*d - a*sqrtRD;
-    
+
         return [x_a, y_a, x_b, y_b ];
     }
 
@@ -86,7 +89,7 @@ The next solution that I have tried is as follows. Although this solution has wo
         b1.sety(b1.cy() + b1.vy * b1.sp);
         b2.setx(b2.cx() + b2.vx * b2.sp);
         b2.sety(b2.cy() + b2.vy * b2.sp);
-    
+
         if(ball_dist(b1, b2) <= (b1.w / 2))
         {
     	checkOverlap(b1, b2);

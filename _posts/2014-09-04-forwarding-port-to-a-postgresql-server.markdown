@@ -3,7 +3,12 @@ layout: post
 title: Forwarding port to a PostgreSQL server
 date: 2014-09-04 17:07:16 +0530
 category: PostgreSQL
-tags: SSH forwarding Port PostgreSQL AWS EC2
+tags:
+    - SSH
+    - Port
+    - PostgreSQL
+    - AWS
+    - AWS EC2
 author: Ajoy Oommen
 published: true
 ---

@@ -3,7 +3,11 @@ layout: post
 title: Understanding DKG
 date: 2013-02-23 18:22:21 +0530
 category: Asynchronous Key Generation for IBE
-tags: GNU Multi Pairing-based Precision Verifiable C++ Sharing Secret Cryptography Library Key Generation Distributed
+tags:
+    - C++
+    - PBC
+    - DKG
+    - VSS
 author: Ajoy Oommen
 published: true
 ---

@@ -3,7 +3,10 @@ layout: post
 title: Migrating databases with South
 date: 2014-09-14 17:15:12 +0530
 category: Django
-tags: South Python Database Django
+tags:
+    - Django South
+    - Python
+    - Django
 author: Ajoy Oommen
 published: true
 ---

@@ -3,7 +3,13 @@ layout: post
 title: Provisioning an ubuntu server for Django, Postgres, NGINX
 date: 2017-02-27 06:29:05 +0530
 category: NGINX
-tags: PostgreSQL ubuntu AWS EC2 NGINX Django
+tags:
+    - PostgreSQL
+    - Ubuntu
+    - AWS
+    - AWS EC2
+    - NGINX
+    - Django
 author: Ajoy Oommen
 published: true
 ---

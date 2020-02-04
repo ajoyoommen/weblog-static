@@ -3,7 +3,8 @@ layout: post
 title: Redirecting with NGINX
 date: 2015-09-01 09:33:50 +0530
 category: NGINX
-tags: NGINX Redirect
+tags:
+    - NGINX
 author: Ajoy Oommen
 published: true
 ---

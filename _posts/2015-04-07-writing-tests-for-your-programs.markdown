@@ -3,7 +3,8 @@ layout: post
 title: Writing tests for your programs
 date: 2015-04-07 03:42:54 +0530
 category: Testing
-tags: 
+tags:
+    - testing
 author: Ajoy Oommen
 published: true
 ---

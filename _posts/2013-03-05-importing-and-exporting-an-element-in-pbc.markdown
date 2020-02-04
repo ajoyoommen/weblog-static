@@ -3,7 +3,10 @@ layout: post
 title: Importing and exporting an element in PBC
 date: 2013-03-05 18:42:05 +0530
 category: Asynchronous Key Generation for IBE
-tags: Pairing-based C++ Cryptography Key Generation Distributed
+tags:
+    - PBC
+    - C++
+    - DKG
 author: Ajoy Oommen
 published: true
 ---
