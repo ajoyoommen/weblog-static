@@ -1,8 +1,16 @@
 title: "Ajoy Oommen's Weblog"
+tagline: "On Computer Science and related topics"
 email: ajoyoommen
 description: ""
 baseurl: ""
 url: "https://blog.ajoyoommen.com"
+
+author: "Ajoy Oommen"
+
+twitter:
+  username: ajoyoommen
+  card: summary
+
 twitter_username: ajoyoommen
 github_username:  ajoyoommen
 
@@ -11,4 +19,5 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 permalink: /:year/:month/:day/:title
